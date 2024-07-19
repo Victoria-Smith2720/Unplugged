@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
   <head>
-    <title>The Unplugged Retreat</title>
+    <title>Unplugged Retreat</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
@@ -23,8 +23,9 @@
 
   <body>
     <header>
-      <div>
+      <div class="content-wrapper">
         <a href="#"><img src="" alt="unplugged logo" /></a>
+        <div class="header-divider"></div>
 
         <nav>
           <ul>
@@ -38,35 +39,113 @@
 
     <!--MAIN-->
     <main>
-      <section>
-        <img src="img/unplugged-retreat.png" alt="woman on bridge in forest">
+      <section class="hero-area">
+        <!-- <img src="img/unplugged-retreat.png" alt="woman on bridge in forest" /> -->
         <p>Retreat from the desk, return refreshed.</p>
-
-
       </section>
 
-
+      <!--NEWSLETTER SIGNUP-->
       <aside>
-        <h3>Want to join the next retreat?</h3>
+        <div class="content-wrapper">
+          <div class="form-description">
+            <h3>Want to join the next retreat?</h3>
 
-        <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
+            <p>
+              Find out when we are holding our next retreat and how your company
+              or team can sign up!
+            </p>
+          </div>
+          <h3>Find out more</h3>
 
-        <h3>Find out more</h3>
-
-        <div class="signup">
-
-          <input type="text" name="name" value="email address">
-
-          <input type="button" value="Download Itinerary">
-
-
+          <div class="form">
+            <input type="text" name="name" value="email address" />
+            <input type="button" value="Download Itinerary" />
+          </div>
         </div>
-
       </aside>
+
+      <!--FEATUES, INFO & IMAGES-->
+      <section class="features">
+        <div class="content-wrapper">
+          <!--ADD YOURD FEATURES CONTENT HERE-->
+          <h2>
+            Have the work week you always dreamed of — without the bad Wifi.
+          </h2>
+          <div class="features-items">
+            <article>
+              <p class="fontawesome-icon"></p>
+              <p class="features-item-description">
+                Located in a perfect bungalow outside of Lake Geneva, Wisconsin.
+              </p>
+            </article>
+
+            <article>
+              <p class="fontawesome-icon"></p>
+              <p class="features-item-description">
+                12 private rooms with ensuite bathrooms, 2 group meeting rooms,
+                and 4 breakout rooms.
+              </p>
+            </article>
+
+            <article>
+              <p class="fontawesome-icon"></p>
+              <p class="features-item-description">
+                Private chef team providing on demand meals - just like your
+                team kitchen.
+              </p>
+            </article>
+
+            <article>
+              <p class="fontawesome-icon"></p>
+              <p class="features-item-description">
+                5 outdoor obstacle courses, including private beach 1/2 mile
+                from bungalow.
+              </p>
+            </article>
+
+            <article>
+              <p class="fontawesome-icon"></p>
+              <p class="features-item-description">
+                Retreat facilitator to manage your day to day activities so you
+                all get a chance to reset.
+              </p>
+            </article>
+
+            <article>
+              <p class="fontawesome-icon"></p>
+              <p class="features-item-description">
+                Dedicated computer room for times that you must use Wifi.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--REVIEWS-->
+      <section class="reviews">
+        <div class="content-wrapper">
+          <h2>Be a better team in 5 days, like this one.</h2>
+          <article>
+            <div>
+              <h3>
+                LaCrue Bottling Co.<br />
+                October 2018
+              </h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
+                earum est molestiae repellat dolore at tempora cum! Excepturi
+                aspernatur dolor autem perspiciatis exercitationem ea, laborum
+                quo. Veritatis voluptas illum quas.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
     </main>
     <!--main wrapper-->
 
-    <script src="js/app.js"></script>
+
 
     <!--FOOTER-->
     <footer>
@@ -75,12 +154,13 @@
           <div class="contact">
             <h4>Contact</h4>
             <address>
-              <p>555-555-5555</p>
-              <a href="mailto:hello@unplugged.com">hello@unplugged.com</a>
+              <p>555-555-5555<br>
+              <a href="mailto:hello@unplugged.com">hello@unplugged.com</p></a>
             </address>
           </div>
           <div class="social">
             <h4>Social</h4>
+            <div class="social-icons">
             <p>
               <a
                 href="https://www.facebook.com"
@@ -109,6 +189,7 @@
               ></a>
             </p>
           </div>
+          </div>
         </div>
         <!--FOOTER CONTENT ENDS-->
         <!--COPYRIGHT-->
@@ -118,5 +199,8 @@
       </div>
       <!--FOOTER-CONTENT WRAPPER ENDS HERE-->
     </footer>
+
+    <script src="js/app.js"></script>
+
   </body>
 </html>
