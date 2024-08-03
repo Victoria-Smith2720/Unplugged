@@ -84,6 +84,109 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*----------------------------------- Base Header — Footer Styles------------
+-----------------------*/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+footer .social p {
+  display: flex;
+  justify-content: center;
+}
+
+/*---------------------------------- MOBILE STYLES -- HOMEPAGE ----------------------------
+-------------------*/
+
+/* HERO AREA */
+
+.hero-area {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+/* ASIDE */
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: center;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: space-around;
+  flex-flow: row wrap;
+}
+
+/* REVIEWS */
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/*------------------------------- ABOUT PAGE STYLES ------------------------
+------------------*/
+.mission {
+  display: flex;
+  justify-content: center;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*------------------------------- FAQS PAGE STYLES ------------------------
+------------------*/
+.faq {
+  display: flex;
+  justify-content: center;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -244,4 +347,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
