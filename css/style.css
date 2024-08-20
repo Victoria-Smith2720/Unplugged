@@ -90,7 +90,6 @@ textarea {
 /*----------------------------------- Base Header — Footer Styles------------
 -----------------------*/
 
-
 header {
   display: flex;
   justify-content: center;
@@ -123,7 +122,7 @@ header nav ul {
 
 footer {
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
   text-align: center;
 }
@@ -139,7 +138,6 @@ footer .content-wrapper {
 footer .contact {
   margin-bottom: 50px;
 }
-
 
 footer .social-icons {
   display: flex;
@@ -165,7 +163,6 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: flex-start;
-  /* padding: 50px 0; */
 }
 
 /* ASIDE */
@@ -173,16 +170,13 @@ footer .copyright {
 aside {
   display: flex;
   justify-content: center;
-
 }
-
 
 /* FEATURES */
 .features {
   display: flex;
   justify-content: center;
 }
-
 
 .features h2 {
   margin-bottom: 60px;
@@ -198,41 +192,21 @@ aside {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
-  /* flex-direction: column;
-  align-content: space-around;
-   */
 }
 
 .features p {
   margin: 0;
 }
 
-/* .fontawesome-icon {
-  padding: 30px 0 40px;
-}
-
-.features-item-description {
-  padding-bottom: 30px;
-} POSSIBLY NOT NEEDED */
-
 /* REVIEWS */
 .reviews {
   display: flex;
   justify-content: center;
-  /* align-items: stretch; */
 }
 
 .reviews h2 {
   margin-bottom: 40px;
 }
-
-/* .content-wrapper {
-  padding: 50px 0 50px;
-}
-
-article {
-  margin-top: 40px;
-} */
 
 .reviews h3 {
   width: 50%;
@@ -361,15 +335,155 @@ article {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* GENERAL STYLES */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  /*==================================================== HOMEPAGE =========================================*/
+  header {
+    padding: 33px 0;
+  }
+
+  header .content-wrapper {
+    /* display: flex; remove */
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  header nav {
+    width: 20%;
+  }
+  header nav ul {
+    /* width: ;remove */
+    /* display: flex; */
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    /* width: ;remove */
+    display: none;
+  }
+
+  /* HERO AREA */
+
+.content-wrapper h1 {
+  display: flex;
+  justify-content: center;
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+  /* ASIDE */
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  /* FEATURES */
+
+  .features article {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+
+  .features .features-item-description {
+    width: 50%;
+  }
+
+  /* REVIEWS */
+
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .reviews article div {
+    width: 49%;
+  }
+
+  /* FOOTER */
+
+  footer .content-section {
+    width: 65%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+}
+
+
+/* ======================================= ABOUT PAGE ================================ */
+
+.mission-content {
+display: flex;
+justify-content: space-between;
+padding-top: 20px;
+align-items: flex-start;
+}
+
+.mission-content p {
+  width: 45%;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 80%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+
+/* ======================================= FAQ PAGE ================================ */
+
+
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+
+.faq-content {
+  flex-basis: 45%;
+}
+
+.faq h2 {
+  width: 100%;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+  /* desktop styels here */
 }
 
 /* ==========================================================================
